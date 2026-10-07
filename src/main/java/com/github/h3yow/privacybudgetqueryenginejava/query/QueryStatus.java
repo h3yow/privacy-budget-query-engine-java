@@ -5,5 +5,7 @@ public enum QueryStatus {
     OK,
     REJECTED_INVALID_PARAMETER,
     REJECTED_BUDGET_EXHAUSTED,
-    REJECTED_INSUFFICIENT_ANONYMITY
+    REJECTED_INSUFFICIENT_ANONYMITY,
+    /** 会话额度不存在、已过期或已被结束（与参数越界、匿名度不足明确区分）。 */
+    REJECTED_SESSION_INVALID
 }
